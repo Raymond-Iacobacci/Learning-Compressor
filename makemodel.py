@@ -42,7 +42,6 @@ model.load_weights(filepath)
 #model.compile(loss='categorical_crossentropy', optimizer='adam')
 total = ""
 import math
-print("Loaded weights")
 for i in range(len(dataX)):
     if i == math.ceil(len(dataX)/100):
         print(".", end='')
