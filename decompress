@@ -2,5 +2,6 @@
 export XT1 = ".binary_encoding"
 export XT2 = ".binary_reconstruction"
 python usemodel.py "$1$XT1" > "$1$XT2"
+javac BINARY_TO_CHAR.java
 java BINARY_TO_CHAR "$1$XT2" > $1
 rm "$1$XT1" "$1$XT2"
