@@ -1,3 +1,6 @@
 #/bin/bash
-python usemodel.py $1+".binary_encoding" > $1+".binary_reconstruction"
-java binary_to_ascii $1+".binary_reconstruction" > $1
+export XT1 = ".binary_encoding"
+export XT2 = ".binary_reconstruction"
+python usemodel.py "$1$XT1" > "$1$XT2"
+java BINARY_TO_CHAR "$1$XT2" > $1
+rm "$1$XT1" "$1$XT2"
