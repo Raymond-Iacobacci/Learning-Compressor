@@ -43,7 +43,7 @@ model.load_weights(filepath)
 total = ""
 import math
 for i in range(len(dataX)):
-    if i == math.ceil(len(dataX)/100):
+    if i%(math.ceil(len(dataX)/100)) == 0:
         print(".", end='')
     pattern = dataX[i]
     x = numpy.reshape(pattern, (1, len(pattern), 1))
