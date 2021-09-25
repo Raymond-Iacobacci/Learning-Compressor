@@ -1,6 +1,8 @@
 #/bin/bash
 export XT=".binary_encoding"
+javac CHAR_TO_BINARY.java
 java CHAR_TO_BINARY $1 > "$1$XT"
 echo Converted to binary, beginning compression.
-#rm $1
+rm $1
 python makemodel.py "$1$XT"
+rm "$1$XT"
