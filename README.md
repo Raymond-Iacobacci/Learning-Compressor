@@ -1,2 +1,2 @@
 # Learning-Compressor
-Machine-Learning based data compressor for command line
+Machine-Learning powered data compressor for command line
