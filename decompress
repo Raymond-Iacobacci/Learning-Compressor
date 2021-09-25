@@ -1,0 +1,3 @@
+#/bin/bash
+python usemodel.py $1+".binary_encoding" > $1+".binary_reconstruction"
+java binary_to_ascii $1+".binary_reconstruction" > $1
