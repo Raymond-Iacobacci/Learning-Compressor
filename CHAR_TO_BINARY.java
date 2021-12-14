@@ -24,6 +24,7 @@ public class CHAR_TO_BINARY {
       stMaster.append(st); 
       stMaster.append("\n");
     }
+    br.close();
     BufferedWriter out = null;
     try {
       FileWriter fstream = new FileWriter(args[0]+".binary_encoding", true);
