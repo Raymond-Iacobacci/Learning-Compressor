@@ -18,6 +18,7 @@ public class BINARY_TO_CHAR {
       stMaster.append(st);
       stMaster.append("\n");
     }
+    br.close();
     BufferedWriter out = null;
     try {
       FileWriter fstream = new FileWriter(args[0].substring(0, args[0].length()-16), true);
